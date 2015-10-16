@@ -12,8 +12,8 @@ public class Main {
 
         };
 
-        for (int i = 0; i < vehicles.length; i++) {
-            testDrive(vehicles[i]);
+        for (Vehicle vehicle : vehicles) {
+            testDrive(vehicle);
         }
     }
 

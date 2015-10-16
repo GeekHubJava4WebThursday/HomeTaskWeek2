@@ -10,7 +10,7 @@ import com.geekhub.hw2.vehicle.Vehicle;
 public class Boat extends Vehicle {
 
     public Boat(EnergySource energySource, GasTank gasTank, Engine engine, Gear gear) {
-        super(energySource, gasTank, engine, gear);
+        super(gasTank, engine, gear);
     }
 
     @Override
