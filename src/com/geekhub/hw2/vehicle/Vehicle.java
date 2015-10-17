@@ -1,5 +1,6 @@
 package com.geekhub.hw2.vehicle;
 
+import com.geekhub.hw2.details.BoatEngineDecorator;
 import com.geekhub.hw2.parts.*;
 
 public abstract class Vehicle implements Driveable {
@@ -7,6 +8,7 @@ public abstract class Vehicle implements Driveable {
     private final EnergySource energySource;
     private final FuelTank fuelTank;
     private final Engine engine;
+    private final BoatEngineDecorator boatEngine;
     private final Gear gear;
     private final Wheels wheels;
 
@@ -15,13 +17,15 @@ public abstract class Vehicle implements Driveable {
         this.engine = engine;
         this.gear = gear;
         this.wheels = wheels;
+        boatEngine = null;
         energySource = fuelTank.get();
     }
 
-    public Vehicle(FuelTank fuelTank, Engine engine, Gear gear) {
+    public Vehicle(FuelTank fuelTank, BoatEngineDecorator boatEngine) {
         this.fuelTank = fuelTank;
-        this.engine = engine;
-        this.gear = gear;
+        this.boatEngine = boatEngine;
+        engine = null;
+        gear = null;
         wheels = null;
         energySource = fuelTank.get();
     }
@@ -36,6 +40,10 @@ public abstract class Vehicle implements Driveable {
 
     public Engine getEngine() {
         return engine;
+    }
+
+    public BoatEngineDecorator getBoatEngine() {
+        return boatEngine;
     }
 
     public Gear getGear() {
