@@ -1,4 +1,4 @@
-package com.geekhub.hw2.parts;
+package com.geekhub.hw2.parts.interfaces;
 
 import com.geekhub.hw2.Force;
 
