@@ -16,6 +16,7 @@ public class Energy implements EnergySource {
 
     @Override
     public Energy get() {
-        return null;
+        return this;
     }
+
 }
