@@ -1,6 +1,8 @@
 package com.geekhub.hw2.parts;
 
-public interface GasTank {
+public interface FuelTank {
 
     EnergySource get();
+
+    void add(int amount);
 }

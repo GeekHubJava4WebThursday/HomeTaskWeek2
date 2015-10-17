@@ -8,6 +8,6 @@ public class ElectricEngine implements Engine {
 
     @Override
     public Force transform(Energy energy) {
-        return null;
+        return new Force(energy.getAmount());
     }
 }

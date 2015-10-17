@@ -5,32 +5,44 @@ import com.geekhub.hw2.parts.*;
 public abstract class Vehicle implements Driveable {
 
     private final EnergySource energySource;
-    private final GasTank gasTank;
+    private final FuelTank fuelTank;
     private final Engine engine;
     private final Gear gear;
     private final Wheels wheels;
 
-    public Vehicle(GasTank gasTank, Engine engine, Gear gear, Wheels wheels) {
-        this.gasTank = gasTank;
+    public Vehicle(FuelTank fuelTank, Engine engine, Gear gear, Wheels wheels) {
+        this.fuelTank = fuelTank;
         this.engine = engine;
         this.gear = gear;
         this.wheels = wheels;
-        energySource = gasTank.get();
+        energySource = fuelTank.get();
     }
 
-    public Vehicle(GasTank gasTank, Engine engine, Gear gear) {
-        this.gasTank = gasTank;
+    public Vehicle(FuelTank fuelTank, Engine engine, Gear gear) {
+        this.fuelTank = fuelTank;
         this.engine = engine;
         this.gear = gear;
         wheels = null;
-        energySource = gasTank.get();
+        energySource = fuelTank.get();
     }
 
-    public Vehicle(EnergySource energySource, Engine engine, Gear gear, Wheels wheels) {
-        this.energySource = energySource;
-        this.engine = engine;
-        this.gear = gear;
-        this.wheels = wheels;
-        gasTank = null;
+    public EnergySource getEnergySource() {
+        return energySource;
+    }
+
+    public FuelTank getFuelTank() {
+        return fuelTank;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public Gear getGear() {
+        return gear;
+    }
+
+    public Wheels getWheels() {
+        return wheels;
     }
 }

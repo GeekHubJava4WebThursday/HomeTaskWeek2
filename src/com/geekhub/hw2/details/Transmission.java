@@ -7,6 +7,6 @@ public class Transmission implements Gear {
 
     @Override
     public void consume(Force force) {
-
+        System.out.println(force != null ? "Transmission consumed " + force.getAmount() + " kW" : "");
     }
 }

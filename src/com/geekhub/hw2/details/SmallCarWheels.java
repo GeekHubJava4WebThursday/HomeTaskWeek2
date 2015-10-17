@@ -7,6 +7,6 @@ public class SmallCarWheels implements Wheels {
 
     @Override
     public void turnFrontWheels(Direction direction) {
-
+        System.out.println("Wheels turned " + direction.toString());
     }
 }

@@ -8,6 +8,10 @@ public class InternalCombustionEngine implements Engine {
 
     @Override
     public Force transform(Energy energy) {
-        return null;
+        if (energy == null) {
+            System.out.println("The vehicle will not go further");
+            return null;
+        }
+        return new Force(energy.getAmount());
     }
 }
