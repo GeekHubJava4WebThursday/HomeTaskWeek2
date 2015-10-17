@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         //TODO: Invoke testDrive method for every vehicle
+        System.out.println("HW!");
         Vehicle[] vehicles = {
 
         };
