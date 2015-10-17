@@ -11,6 +11,10 @@ public class SolarCar extends Car {
         super(energySource, engine, gear, runMechanism);
     }
 
+    public SolarCar(EnergySource energySource, Engine engine, RunMechanism runMechanism) {
+        super(energySource, engine, runMechanism);
+    }
+
     @Override
     public void accelerate() {
         System.out.print("Solar ");

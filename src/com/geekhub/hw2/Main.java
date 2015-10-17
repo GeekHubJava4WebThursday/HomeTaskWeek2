@@ -38,12 +38,14 @@ public class Main {
 
     private static Car getCar1() {
         Wheels wheels = new Wheels(0.35F);
-        return new Car(new GasTank(8, 4), new CarEngine(0.6F), new CarTransmission(wheels), wheels);
+        //return new Car(new GasTank(8, 4), new CarEngine(0.6F), new CarTransmission(wheels), wheels);
+        return new Car(new GasTank(8, 4), new CarEngine(0.6F), wheels);
     }
 
     private static SolarCar getCar2() {
         Wheels wheels = new Wheels(0.35F);
-        return new SolarCar(new Accumulator(100), new SolarCarEngine(0.8F), new CarTransmission(wheels), wheels);
+        //return new SolarCar(new Accumulator(100), new SolarCarEngine(0.8F), new CarTransmission(wheels), wheels);
+        return new SolarCar(new Accumulator(100), new SolarCarEngine(0.8F), wheels);
     }
 
     private static Boat getBoat1() {
