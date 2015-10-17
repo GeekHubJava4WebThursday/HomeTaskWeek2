@@ -1,6 +1,8 @@
 package com.geekhub.hw2;
 
-public class Energy {
+import com.geekhub.hw2.parts.EnergySource;
+
+public class Energy implements EnergySource {
 
     private final int amount;
 
@@ -10,5 +12,10 @@ public class Energy {
 
     public int getAmount() {
         return amount;
+    }
+
+    @Override
+    public Energy get() {
+        return null;
     }
 }

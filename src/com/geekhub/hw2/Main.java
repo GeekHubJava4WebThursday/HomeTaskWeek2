@@ -11,7 +11,6 @@ public class Main {
         Vehicle[] vehicles = {
 
         };
-
         for (int i = 0; i < vehicles.length; i++) {
             testDrive(vehicles[i]);
         }
