@@ -28,6 +28,8 @@ public class SolarCar extends Car {
     private void useEnergy(int amount) {
         Force force = getEngine().transform(getEnergySource().get(amount));
         getGear().consume(force);
+        getFuelTank().add(5);
+        System.out.println("Charge level: " + getEnergySource().getAmount());
     }
 
     @Override

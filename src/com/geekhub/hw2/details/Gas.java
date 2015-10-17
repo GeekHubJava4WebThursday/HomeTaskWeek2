@@ -11,6 +11,11 @@ public class Gas implements EnergySource {
         this.amount = amount;
     }
 
+    @Override
+    public int getAmount() {
+        return amount;
+    }
+
     private void consumeEnergy(int amount) {
         this.amount -= amount;
     }

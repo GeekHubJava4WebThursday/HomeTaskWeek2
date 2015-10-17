@@ -11,6 +11,11 @@ public class SolarEnergy implements EnergySource {
         this.charge = charge;
     }
 
+    @Override
+    public int getAmount() {
+        return charge;
+    }
+
     public void addCharge(int charge) {
         this.charge += charge;
     }

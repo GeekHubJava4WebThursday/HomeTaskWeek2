@@ -30,6 +30,7 @@ public class Car extends Vehicle {
         EnergySource gas = getFuelTank().get();
         Force force = getEngine().transform(gas.get(amount));
         getGear().consume(force);
+        System.out.println("Fuel level: " + gas.getAmount());
     }
 
     @Override
