@@ -17,16 +17,20 @@ public class Boat extends Vehicle {
 
     @Override
     public void accelerate() {
-
+        System.out.println("Boat starts to move ");
+        super.accelerate();
     }
 
     @Override
     public void turn(Direction direction) {
-
+        System.out.println("Boat starts to turn");
+        super.turn(direction);
     }
 
     @Override
     public void brake() {
+        System.out.println("Boat starts to brake");
+        super.brake();
 
     }
 }

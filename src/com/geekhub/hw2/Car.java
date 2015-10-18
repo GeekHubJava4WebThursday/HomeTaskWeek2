@@ -12,6 +12,8 @@ import com.geekhub.hw2.vehicle.Vehicle;
 public class Car extends Vehicle {
     String engine;
     String wheels;
+    String brakes;
+
 
     public Car(EnergySource energySource, Engine engine, Gear gear) {
         super(energySource, engine, gear);
@@ -19,16 +21,19 @@ public class Car extends Vehicle {
 
     @Override
     public void accelerate() {
-
+        System.out.println("Car starts to move ");
+        super.accelerate();
     }
 
     @Override
     public void turn(Direction direction) {
-
+        System.out.println("Car starts to turn");
+        super.turn(direction);
     }
 
     @Override
     public void brake() {
-
+        System.out.println("Car starts to brake");
+        super.brake();
     }
 }
