@@ -9,7 +9,6 @@ public class Screw{
     }
 
     public void stop(){
-        System.out.println("Try to stop the screw");
         try {
             Thread.sleep(1000);
             System.out.println("Screw stopped");

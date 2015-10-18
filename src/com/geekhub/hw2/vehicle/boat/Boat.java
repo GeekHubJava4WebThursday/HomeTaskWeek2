@@ -1,6 +1,5 @@
 package com.geekhub.hw2.vehicle.boat;
 
-import com.geekhub.hw2.Force;
 import com.geekhub.hw2.parts.energy.EnergySource;
 import com.geekhub.hw2.parts.engine.Engine;
 import com.geekhub.hw2.parts.gear.AutomaticTransmission;
@@ -24,7 +23,7 @@ public class Boat extends Vehicle {
 
     @Override
     public void brake() {
-        gear.consume(new Force(0));
+        System.out.println("Try to stop screw");
         screw.stop();
     }
 
