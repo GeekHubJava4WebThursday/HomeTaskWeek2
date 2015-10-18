@@ -1,13 +1,7 @@
 package com.geekhub.hw2;
 
-import com.geekhub.hw2.parts.Blades;
-import com.geekhub.hw2.parts.GasEngine;
-import com.geekhub.hw2.parts.BoatGear;
-import com.geekhub.hw2.parts.GasTank;
-import com.geekhub.hw2.vehicle.Boat;
-import com.geekhub.hw2.vehicle.Direction;
-import com.geekhub.hw2.vehicle.Driveable;
-import com.geekhub.hw2.vehicle.Vehicle;
+import com.geekhub.hw2.parts.*;
+import com.geekhub.hw2.vehicle.*;
 
 
 public class Main {
@@ -16,13 +10,18 @@ public class Main {
         //Install some vehicle (boat, car, solar car)
 
         Boat boat =  new Boat(new GasTank(100), new GasEngine(), new BoatGear(), new Blades());
+        Car car =  new Car(new GasTank(100), new GasEngine(), new CarGear(), new Wheels());
+        SolarCar solarCar =  new SolarCar(new Battery(100), new ElectroEngine(), new CarGear(), new Wheels());
 
         Vehicle[] vehicles = {
-            boat
+            boat,
+            car,
+            solarCar
         };
 
         for (int i = 0; i < vehicles.length; i++) {
             testDrive(vehicles[i]);
+            System.out.println(".................................");
         }
     }
 

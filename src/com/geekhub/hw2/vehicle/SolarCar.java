@@ -7,12 +7,13 @@ import com.geekhub.hw2.parts.Gear;
 import com.geekhub.hw2.parts.RunDevice;
 
 /**
- * Class for Car
- */
+ * Class for Solar Car
+ *
+ * */
 
-public class Car extends Vehicle{
+public class SolarCar extends Vehicle{
 
-    public Car(EnergySource energySource, Engine engine, Gear gear, RunDevice wheel) {
+    public SolarCar(EnergySource energySource, Engine engine, Gear gear, RunDevice wheel) {
         super(energySource, engine, gear, wheel);
     }
 
@@ -21,18 +22,18 @@ public class Car extends Vehicle{
         super.accelerate();
         Force force = engine.transform(energySource.get());
         gear.consume(force);
-        System.out.println("accelerated car");
+        System.out.println("accelerated solar car");
     }
 
     @Override
     public void brake() {
         super.brake();
-        System.out.println("stop car");
+        System.out.println("stop solar car");
     }
 
     @Override
     public void turn(Direction direction) {
         super.turn(direction);
-        System.out.println(" car");
+        System.out.println(" solar car");
     }
 }

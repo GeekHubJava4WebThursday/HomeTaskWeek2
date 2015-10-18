@@ -28,7 +28,7 @@ public class Boat extends Vehicle{
     @Override
     public void brake() {
         super.brake();
-        System.out.println(" boat");
+        System.out.println("stop boat");
     }
 
     @Override

@@ -9,6 +9,6 @@ import com.geekhub.hw2.parts.Gear;
 public class BoatGear implements Gear{
     @Override
     public void consume(Force force) {
-        System.out.println("start moving");
+        System.out.println("start boat moving");
     }
 }

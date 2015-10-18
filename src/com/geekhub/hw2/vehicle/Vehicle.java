@@ -57,6 +57,6 @@ public abstract class Vehicle implements Driveable {
     }
 
     public void brake(){
-        System.out.print("stop");
+
     }
 }
