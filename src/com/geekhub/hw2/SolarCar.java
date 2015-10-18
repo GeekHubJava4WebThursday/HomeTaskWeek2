@@ -21,7 +21,6 @@ public class SolarCar extends Car {
 
     @Override
     public void turn(Direction direction) {
-//        System.out.println("Solar car starts to turn");
         super.turn(direction);
     }
 
