@@ -5,6 +5,7 @@ public class Force {
     private final int amount;
 
     public Force(int amount) {
+        System.out.println(getClass().toString() + " - creating...");
         this.amount = amount;
     }
 

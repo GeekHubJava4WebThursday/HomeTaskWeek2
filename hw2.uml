@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.geekhub.hw2</OriginalElement>
+  <nodes>
+    <node x="17.0" y="783.0">com.geekhub.hw2.SolarCar.SolarCar</node>
+    <node x="1042.0" y="1211.0">com.geekhub.hw2.Energy</node>
+    <node x="468.0" y="1047.0">com.geekhub.hw2.car.GasTank</node>
+    <node x="410.5" y="313.0">com.geekhub.hw2.boat.Boat</node>
+    <node x="227.0" y="1047.0">com.geekhub.hw2.boat.Recreation</node>
+    <node x="938.0" y="1047.0">com.geekhub.hw2.boat.Human</node>
+    <node x="1221.0" y="1211.0">com.geekhub.hw2.Force</node>
+    <node x="0.0" y="548.0">com.geekhub.hw2.car.Car</node>
+    <node x="533.5" y="1211.0">com.geekhub.hw2.parts.Rotateable</node>
+    <node x="253.0" y="1312.0">com.geekhub.hw2.car.Transmission</node>
+    <node x="23.5" y="368.5">com.geekhub.hw2.vehicle.VehicleWheel</node>
+    <node x="861.0" y="1211.0">com.geekhub.hw2.Torque</node>
+    <node x="531.0" y="1312.0">com.geekhub.hw2.car.Wheel</node>
+    <node x="1191.0" y="1047.0">com.geekhub.hw2.car.Motor</node>
+    <node x="243.75" y="145.0">com.geekhub.hw2.vehicle.Vehicle</node>
+    <node x="0.0" y="1047.0">com.geekhub.hw2.SolarCar.Battery</node>
+    <node x="807.5" y="145.0">com.geekhub.hw2.car.Chassis</node>
+    <node x="964.0" y="946.0">com.geekhub.hw2.parts.Engine</node>
+    <node x="279.0" y="946.0">com.geekhub.hw2.parts.EnergySource</node>
+    <node x="885.5" y="0.0">com.geekhub.hw2.parts.MovingPart</node>
+    <node x="685.0" y="1047.0">com.geekhub.hw2.SolarCar.ElectricMotor</node>
+    <node x="306.75" y="0.0">com.geekhub.hw2.vehicle.Driveable</node>
+    <node x="713.0" y="1211.0">com.geekhub.hw2.vehicle.Direction</node>
+    <node x="0.0" y="1454.0">com.geekhub.hw2.Main</node>
+    <node x="0.0" y="1312.0">com.geekhub.hw2.boat.Paddles</node>
+    <node x="155.5" y="1211.0">com.geekhub.hw2.parts.Gear</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.geekhub.hw2.car.Car" target="com.geekhub.hw2.vehicle.VehicleWheel">
+      <point x="0.0" y="-92.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.geekhub.hw2.car.Motor" target="com.geekhub.hw2.parts.Engine">
+      <point x="0.0" y="-48.5" />
+      <point x="1307.5" y="1022.0" />
+      <point x="1114.8333333333333" y="1022.0" />
+      <point x="60.33333333333326" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.boat.Boat" target="com.geekhub.hw2.vehicle.Vehicle">
+      <point x="0.0" y="-92.5" />
+      <point x="586.5" y="288.0" />
+      <point x="473.25" y="288.0" />
+      <point x="76.5" y="59.0" />
+    </edge>
+    <edge source="com.geekhub.hw2.car.Wheel" target="com.geekhub.hw2.parts.Rotateable">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.car.Transmission" target="com.geekhub.hw2.parts.Gear">
+      <point x="0.0" y="-48.5" />
+      <point x="369.5" y="1287.0" />
+      <point x="286.75" y="1287.0" />
+      <point x="43.75" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.boat.Recreation" target="com.geekhub.hw2.parts.EnergySource">
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.car.Chassis" target="com.geekhub.hw2.parts.MovingPart">
+      <point x="0.0" y="-115.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.boat.Human" target="com.geekhub.hw2.parts.Engine">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.boat.Paddles" target="com.geekhub.hw2.parts.Gear">
+      <point x="0.0" y="-48.5" />
+      <point x="116.5" y="1287.0" />
+      <point x="199.25" y="1287.0" />
+      <point x="-43.75" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.SolarCar.ElectricMotor" target="com.geekhub.hw2.parts.Engine">
+      <point x="0.0" y="-48.5" />
+      <point x="801.5" y="1022.0" />
+      <point x="994.1666666666666" y="1022.0" />
+      <point x="-60.33333333333337" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.vehicle.VehicleWheel" target="com.geekhub.hw2.vehicle.Vehicle">
+      <point x="0.0" y="-37.0" />
+      <point x="207.0" y="288.0" />
+      <point x="320.25" y="288.0" />
+      <point x="-76.5" y="59.0" />
+    </edge>
+    <edge source="com.geekhub.hw2.SolarCar.Battery" target="com.geekhub.hw2.parts.EnergySource">
+      <point x="0.0" y="-59.5" />
+      <point x="103.5" y="1022.0" />
+      <point x="298.5" y="1022.0" />
+      <point x="-39.0" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.SolarCar.SolarCar" target="com.geekhub.hw2.car.Car">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.car.GasTank" target="com.geekhub.hw2.parts.EnergySource">
+      <point x="0.0" y="-59.5" />
+      <point x="554.0" y="1022.0" />
+      <point x="376.5" y="1022.0" />
+      <point x="39.0" y="25.5" />
+    </edge>
+    <edge source="com.geekhub.hw2.vehicle.Vehicle" target="com.geekhub.hw2.vehicle.Driveable">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8623787976729153" x="708.9480548684508" y="478.4187092421858" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
