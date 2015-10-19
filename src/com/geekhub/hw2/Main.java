@@ -1,8 +1,8 @@
 package com.geekhub.hw2;
 
-import com.geekhub.hw2.SolarCar.Battery;
-import com.geekhub.hw2.SolarCar.ElectricMotor;
-import com.geekhub.hw2.SolarCar.SolarCar;
+import com.geekhub.hw2.solarcar.Battery;
+import com.geekhub.hw2.solarcar.ElectricMotor;
+import com.geekhub.hw2.solarcar.SolarCar;
 import com.geekhub.hw2.boat.Boat;
 import com.geekhub.hw2.boat.Human;
 import com.geekhub.hw2.boat.Paddles;
@@ -16,7 +16,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Creating vehicles... \n");
-        //TODO: Invoke testDrive method for every vehicle
         Boat boat = new Boat(new Recreation(50), new Human(), new Paddles());
         Car bmw = new Car(new GasTank(100), new Motor(), new Transmission(), new Chassis());
         SolarCar tesla = new SolarCar(new Battery(100), new ElectricMotor(), new Transmission(), new Chassis());
