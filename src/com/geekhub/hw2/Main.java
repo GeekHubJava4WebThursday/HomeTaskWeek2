@@ -3,13 +3,16 @@ package com.geekhub.hw2;
 import com.geekhub.hw2.vehicle.Direction;
 import com.geekhub.hw2.vehicle.Driveable;
 import com.geekhub.hw2.vehicle.Vehicle;
+import com.geekhub.hw2.vehicle.boat.Boat;
+import com.geekhub.hw2.vehicle.car.Car;
+import com.geekhub.hw2.vehicle.car.SolarCar;
 
 public class Main {
 
     public static void main(String[] args) {
-        //TODO: Invoke testDrive method for every vehicle
+        Main main = new Main();
         Vehicle[] vehicles = {
-
+                main.getCar(), main.getSolarCar(), main.getBoat()
         };
 
         for (int i = 0; i < vehicles.length; i++) {
@@ -25,4 +28,12 @@ public class Main {
         driveable.accelerate();
         driveable.brake();
     }
-}
+    public Car getCar(){
+        return new Car();}
+    public Boat getBoat(){
+        return new Boat();}
+    public SolarCar getSolarCar(){
+        return new SolarCar();}
+
+    }
+
