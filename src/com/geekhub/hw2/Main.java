@@ -1,14 +1,15 @@
 package com.geekhub.hw2;
 
-import com.geekhub.hw2.vehicle.Direction;
-import com.geekhub.hw2.vehicle.Driveable;
-import com.geekhub.hw2.vehicle.Vehicle;
+import com.geekhub.hw2.parts.*;
+import com.geekhub.hw2.vehicle.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        //TODO: Invoke testDrive method for every vehicle
         Vehicle[] vehicles = {
+                new Boat(new GasTank(100), new GasEngine(), new BoatGear()),
+                new Car(new GasTank(100), new GasEngine(), new CarGear()),
+                new SolarCar(new Battary(200), new BattaryEngine(), new CarGear())
 
         };
 
